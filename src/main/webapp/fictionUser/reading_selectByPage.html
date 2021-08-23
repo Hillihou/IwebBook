@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浏览记录</title>
+    <script src="../My97DatePicker/WdatePicker.js"></script>
+    <link rel="stylesheet" href="../css/query.css">
+    <script>
+        function toListPage(){
+            window.location="./FictionUser_selectByPage.html";
+        }
+    </script>
+</head>
+<body>
+    <div id="top">当前位置： 用户管理 -- 查看阅读记录</div>
+    <div id="contexttop">
+
+        <div class="returnList"><button onclick="toListPage()">返回用户列表</button></div>
+    <table border="1" id="tap">
+        <tr>
+            <td colspan="10">
+                <form action=""> 
+                    按时间段查询：<input type="text" name="" id="" placeholder="起始时间" onclick="WdatePicker()"><span>--</span>
+                    <input type="text" placeholder="结束时间" onclick="WdatePicker()"><br>
+                按关键字查询:<input type="text" placeholder="小说ID、小说名称、作者、类别">
+                <input type="submit" value="查询">
+            </form>
+            </td>
+        </tr>
+        <tr bgcolor="#e0fbc4">
+            <th>用户名</th>
+            <th>小说ID</th>
+            <th>小说名</th>
+            <th>作者</th>
+            <th>类别</th> 
+            <th>开始阅读时间</th>
+            <th>是否会员小说</th>
+            <th>上架状态</th>
+            <th>封面</th>
+        </tr>
+        <tr>
+            <td>tom</td>
+            <td>f1001</td>
+            <td>晚唐浮生</td>
+            <td>孤独麦克</td>
+            <td>玄幻</td>
+            <td>2020-12-09 19:07:35</td>
+            <td>是</td>
+            <td>已上架</td>
+            <td><img src="../img/10000.jpg" alt="晚唐浮生" width="40" height="50"></td>
+        </tr>
+        
+        <tr>
+            <td>tom</td>
+            <td>f1001</td>
+            <td>晚唐浮生</td>
+            <td>孤独麦克</td>
+            <td>玄幻</td>
+            <td>2020-12-09 19:07:35</td>
+            <td>是</td>
+            <td>已上架</td>
+            <td><img src="../img/10000.jpg" alt="晚唐浮生" width="40" height="50"></td>
+        </tr>
+        
+        <tr>
+            <td>tom</td>
+            <td>f1001</td>
+            <td>晚唐浮生</td>
+            <td>孤独麦克</td>
+            <td>玄幻</td>
+            <td>2020-12-09 19:07:35</td>
+            <td>是</td>
+            <td>已上架</td>
+            <td><img src="../img/10000.jpg" alt="晚唐浮生" width="40" height="50"></td>
+        </tr>
+        
+        <tr>
+            <td>tom</td>
+            <td>f1001</td>
+            <td>晚唐浮生</td>
+            <td>孤独麦克</td>
+            <td>玄幻</td>
+            <td>2020-12-09 19:07:35</td>
+            <td>是</td>
+            <td>已上架</td>
+            <td><img src="../img/10000.jpg" alt="晚唐浮生" width="40" height="50"></td>
+        </tr>
+        
+        <tr>
+            <td>tom</td>
+            <td>f1001</td>
+            <td>晚唐浮生</td>
+            <td>孤独麦克</td>
+            <td>玄幻</td>
+            <td>2020-12-09 19:07:35</td>
+            <td>是</td>
+            <td>已上架</td>
+            <td><img src="../img/10000.jpg" alt="晚唐浮生" width="40" height="50"></td>
+        </tr>
+
+       
+
+        
+    </table>
+    <div style="text-align: center;" id="contextbottom">
+        总记录数&nbsp;8&nbsp;条&nbsp;共&nbsp;1&nbsp;页&nbsp;
+        <a href="">首页</a>&nbsp;
+        <a href="">上一页</a>&nbsp;
+        <a href="">下一页</a>&nbsp;
+        <a href="">尾页</a>&nbsp;
+        第&nbsp;1&nbsp;页
+    </div>
+</body>
+</html>

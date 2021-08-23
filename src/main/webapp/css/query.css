@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+}
+
+#top{
+    line-height: 35px;
+    background-image: url(../img/title_bg1.jpg);
+}
+
+#contextbottom{
+    margin: auto;
+}
+
+#contextbottom a{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#tap{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+tr{
+    text-align: center;
+    height: 30px;
+}
+
+textarea{
+    height: 100px;
+    width: 170px;
+}
+
+.desc{
+    text-align: left;
+    padding: 0px 20px;
+}
+

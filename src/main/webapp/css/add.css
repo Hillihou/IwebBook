@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+}
+#top{
+    line-height: 35px;
+    background-image: url(../img/title_bg1.jpg);
+}
+
+table{
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
