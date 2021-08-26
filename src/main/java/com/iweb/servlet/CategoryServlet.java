@@ -13,13 +13,14 @@ import java.util.List;
  public class CategoryServlet extends HttpServlet {
     private CategoryService categoryService=new CategoryServiceImpl();
 
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         doPost(req,resp);
      }
      @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        req.getParameter()
+
 
          //获取请求参数之前转码，保证java内不乱码
         req.setCharacterEncoding("UTF-8");

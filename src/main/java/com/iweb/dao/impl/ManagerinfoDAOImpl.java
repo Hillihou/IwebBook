@@ -10,6 +10,7 @@ import java.util.List;
 public class ManagerinfoDAOImpl extends BaseDAO implements ManagerinfoDAO {
 
 
+
     /**
      * 通过姓名查找管理员，验证用户名
      *

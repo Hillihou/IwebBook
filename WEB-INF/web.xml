@@ -4,6 +4,7 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
+
     <context-param>
         <param-name>user</param-name>
         <param-value>admin</param-value>
@@ -36,9 +37,9 @@
 
 
     <servlet>
-        <servlet-name>CategoryServlet</servlet-name>
-        <servlet-class>com.iweb.servlet.CategoryServlet</servlet-class>
-    </servlet>
+    <servlet-name>CategoryServlet</servlet-name>
+    <servlet-class>com.iweb.servlet.CategoryServlet</servlet-class>
+</servlet>
 
     <servlet-mapping>
         <servlet-name>CategoryServlet</servlet-name>
@@ -54,6 +55,19 @@
         <servlet-name>ManagerServlet</servlet-name>
         <url-pattern>*.manager</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FictionUserServlet</servlet-name>
+        <servlet-class>com.iweb.servlet.FictionUserServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FictionUserServlet</servlet-name>
+        <url-pattern>*.fictionuser</url-pattern>
+    </servlet-mapping>
+
+
+
 
 
 </web-app>

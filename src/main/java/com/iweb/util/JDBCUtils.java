@@ -29,10 +29,10 @@ public class JDBCUtils {
         return conn;
     }
 
-//    public static Connection getConnection() throws Exception {
-//        Class.forName("com.mysql.jdbc.Driver");
-//        return DriverManager.getConnection("jdbc:mysql://localhost:3306/fiction?rewriteBatchedStatements=true","root","123456");
-//    }
+    public static Connection getConnection1() throws Exception {
+        Class.forName("com.mysql.jdbc.Driver");
+        return DriverManager.getConnection("jdbc:mysql://localhost:3306/fiction?rewriteBatchedStatements=true","root","123456");
+    }
 
     public static void closeConnection(Connection connection){
         DbUtils.closeQuietly(connection);

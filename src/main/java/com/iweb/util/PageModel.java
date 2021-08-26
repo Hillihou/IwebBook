@@ -56,7 +56,7 @@ public class PageModel {
         /**
          * 看是不是整除，是整除就是整数（整数是0就改成1，因为没有0页），不是整除就是整数+1
          */
-        return recordCount%pageSize==0?((recordCount/pageSize)==0?1:(recordCount/pageSize)):(recordCount/pageSize+1);
+        return recordCount%pageSize==0?((recordCount)==0?1:(recordCount/pageSize)):(recordCount/pageSize+1);
     }
 
     public void setTotalPages(int totalPages) {

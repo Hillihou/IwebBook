@@ -57,7 +57,7 @@
         <dl>
             <dt onclick="menu(this.parentNode)">用户管理</dt>
             <dd>
-                <a href="./fictionUser/FictionUser_selectByPage.html" target="show">查看用户</a>
+                <a href="${pageContext.request.contextPath}/queryAll.fictionuser" target="show">查看用户</a>
             </dd>
         </dl>
     </div>

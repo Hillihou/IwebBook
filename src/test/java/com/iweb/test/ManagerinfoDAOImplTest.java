@@ -20,7 +20,7 @@ public class ManagerinfoDAOImplTest {
 
     @Test
     public void queryManagerByNameAndPassword() {
-        System.out.println(managerinfoDAO.queryManagerByNameAndPassword("张三", "1234516"));
+        System.out.println(managerinfoDAO.queryManagerByNameAndPassword("张三", "123456"));
     }
 
     @Test

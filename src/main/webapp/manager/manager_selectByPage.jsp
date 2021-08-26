@@ -43,7 +43,7 @@
             <td colspan="7">
                 <form action="${pageContext.request.contextPath}/queryAll.manager">
                     <br>
-                    <input type="text" name="likeValue" placeholder="管理员ID、管理员用户名、管理员昵称">
+                    <input type="text" name="likeValue" placeholder="管理员ID、管理员用户名、管理员昵称" value="${requestScope.pageModel.likeValue}">
                     <input type="submit" value="查询">
                     <br><br>
                 </form>
