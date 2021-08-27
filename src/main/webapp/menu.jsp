@@ -47,7 +47,7 @@
                 <a href="./fiction/fiction_toAdd.html" target="show">添加小说</a>
             </dd>
             <dd>
-                <a href="./fiction/fiction_selectBypage.html" target="show">查看小说</a>
+                <a href="${pageContext.request.contextPath}/queryAll.fiction" target="show">查看小说</a>
             </dd>
         </dl>
     </div>

@@ -67,6 +67,17 @@
     </servlet-mapping>
 
 
+    <servlet>
+        <servlet-name>FictionServlet</servlet-name>
+        <servlet-class>com.iweb.servlet.FictionServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FictionServlet</servlet-name>
+        <url-pattern>*.fiction</url-pattern>
+    </servlet-mapping>
+
+
 
 
 

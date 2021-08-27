@@ -64,7 +64,7 @@
                 <td>${c.memberdayCount}</td>
                 <td><a href="./payinfo_selectBypage.html">充值信息</a></td>
                 <td><a href="./reading_selectByPage.html">浏览记录</a></td>
-                <td><a href="./collect_selectByPage.html">收藏信息</a></td>
+                <td><a href="collect_selectByPage.jsp">收藏信息</a></td>
                 <td><a href="${pageContext.request.contextPath}/toUpdate.fictionuser?userId=${c.userId}">编辑</a></td>
                 <td><a  class="delete" href="${pageContext.request.contextPath}/toDelete.fictionuser?userId=${c.userId}">删除</a></td>
         </tr>

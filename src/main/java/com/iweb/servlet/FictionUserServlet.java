@@ -35,7 +35,7 @@ public class FictionUserServlet extends HttpServlet {
                 queryAll(req,resp);
                 break;
             case "/toAdd.fictionuser":
-                resp.sendRedirect(req.getContextPath()+"/category_toAdd.jsp");
+                resp.sendRedirect(req.getContextPath()+"/fictionUser_toEdit.jsp");
                 break;
             case "/addorupdate.fictionuser":
                 addorupdate(req,resp);

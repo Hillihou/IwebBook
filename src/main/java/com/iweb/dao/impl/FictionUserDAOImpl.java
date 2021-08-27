@@ -30,13 +30,13 @@ public class FictionUserDAOImpl extends BaseDAO implements FictionUserDAO {
             sql.append("WHERE userId LIKE ? or userName LIKE ? or userfullname LIKE ? or movephone LIKE ? ");
             sql.append(" order by userId desc LIMIT "+(pageNo-1)*pageSize+","+pageSize);
             sqlCount.append("WHERE userId LIKE ? or userName LIKE ? or userfullname LIKE ? or movephone LIKE ? ");
-            Long count = (Long) queryForSingleValue(sqlCount.toString(), "%" + likeValue + "%", "%" + likeValue + "%", "%" + likeValue + "%");
+            Long count = (Long) queryForSingleValue(sqlCount.toString(), "%" + likeValue + "%", "%" + likeValue + "%", "%" + likeValue + "%","%" + likeValue + "%");
             if (count==null){
                 pageModel.setRecordCount(1);
             }else {
                 pageModel.setRecordCount(count.intValue());
             }
-            return queryForList(FictionUser.class,sql.toString(),"%" + likeValue + "%", "%" + likeValue + "%", "%" + likeValue + "%");
+            return queryForList(FictionUser.class,sql.toString(),"%" + likeValue + "%", "%" + likeValue + "%", "%" + likeValue + "%","%" + likeValue + "%");
         }else{
             sql.append(" order by userId desc LIMIT "+(pageNo-1)*pageSize+","+pageSize);
             Long count = (Long) queryForSingleValue(sqlCount.toString());
